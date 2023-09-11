@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Body Mass Index (BMI) calculator 
+This is a front-end challenge [Body Mass Index (BMI) calculator ](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T) from [Frontend Mentor](https://www.frontendmentor.io/)
+
+## Technologies used
+[Next.js](https://nextjs.org/) <br>
+[TailwindCSS](https://tailwindcss.com/) <br>
 
 ## Getting Started
 
