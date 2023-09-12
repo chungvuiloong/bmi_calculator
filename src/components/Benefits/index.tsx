@@ -30,7 +30,7 @@ const Benefits = () => {
                 {
                     benefits_data.map((data, index)=>
                         <Card key={index} className='border-2'>
-                            <div className='flex flex-col'>                        
+                            <div className='flex flex-col gap-6'>                        
                                 <Typography variant='h3'>{data.title}</Typography>
                                 <Typography variant='paragraph'>{data.description}</Typography>
                             </div>
