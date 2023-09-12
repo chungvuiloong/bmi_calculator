@@ -4,7 +4,7 @@ import icon_exercise from '@/assets/images/icon-exercise.svg'
 import icon_sleep from '@/assets/images/icon-sleep.svg'
 import Image from 'next/image';
 
-const data =[
+const benefits_data =[
     {
         title: 'Healthy eating',
         description: 'Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.',
@@ -23,14 +23,6 @@ const data =[
 ]
 const Benefits = () => {
     return (
-        <section>
-            <Image
-                src={data[1].icon}
-                width={500}
-                height={500}
-                alt="Picture of the author"
-                />
-        </section>
     );
 };
 
