@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import HeroBanner from '../component/HeroBanner'
+import { HeroBanner } from '../component/HeroBanner'
 
 export default function Home() {
   return (
