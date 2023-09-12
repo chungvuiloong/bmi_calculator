@@ -26,13 +26,15 @@ const benefits_data =[
 const Benefits = () => {
     return (
         <section className='container mx-auto'>
-            {
-                benefits_data.map((data, index)=>
-                    <Card key={index} className='border-2'>
-                        <Typography variant='h3'>{data.title}</Typography>
-                    </Card>
-                )
-            }
+            <div className='flex flex-row'>
+                {
+                    benefits_data.map((data, index)=>
+                        <Card key={index} className='border-2'>
+                            <Typography variant='h3'>{data.title}</Typography>
+                        </Card>
+                    )
+                }
+            </div>
         </section>
     );
 };
