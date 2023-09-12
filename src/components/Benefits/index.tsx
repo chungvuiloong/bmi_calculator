@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import icon_eating from '@/assets/images/icon-eating.svg'
 import icon_exercise from '@/assets/images/icon-exercise.svg'
