@@ -23,14 +23,14 @@ const data =[
 ]
 const Benefits = () => {
     return (
-        <div>
+        <section>
             <Image
-                // src={data[1].icon}
+                src={data[1].icon}
                 width={500}
                 height={500}
                 alt="Picture of the author"
                 />
-        </div>
+        </section>
     );
 };
 
