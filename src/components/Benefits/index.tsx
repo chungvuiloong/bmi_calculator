@@ -3,6 +3,7 @@ import icon_eating from '@/assets/images/icon-eating.svg'
 import icon_exercise from '@/assets/images/icon-exercise.svg'
 import icon_sleep from '@/assets/images/icon-sleep.svg'
 import Image from 'next/image';
+import { Card, Typography } from '@material-tailwind/react';
 
 const benefits_data =[
     {
@@ -23,6 +24,15 @@ const benefits_data =[
 ]
 const Benefits = () => {
     return (
+        <section className='container mx-auto'>
+            {
+                benefits_data.map((data, index)=>
+                    <Card key={index} className='border-2'>
+                        <Typography variant='h3'>{data.title}</Typography>
+                    </Card>
+                )
+            }
+        </section>
     );
 };
 
