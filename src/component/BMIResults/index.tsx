@@ -6,7 +6,7 @@ export  const BMIResults = () => {
             <div>
                 <h2>What your BMI result means</h2>
                 <p>
-                A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+                A BMI range of 18.5 to 24.9 is considered a &apos;healthy weight.&apos;
                 Maintaining a healthy weight may lower your chances of
                 experiencing health issues later on, such as obesity and type
                 2 diabetes. Aim for a nutritious diet with reduced fat and
