@@ -25,13 +25,13 @@ const benefits_data =[
 ]
 const Benefits = () => {
     return (
-        <section className='py-14'>
-            <div className='bg-[#d8e7fe] lg:rounded-r-3xl rounded-none lg:mr-5'>
+        <section>
+            <div className='py-14 bg-[#d8e7fe] lg:rounded-r-3xl rounded-none lg:mr-5'>
                 <div className='px-5 md:px-8 container mx-auto'>
                     <div className='flex flex-col lg:flex-row gap-8'> 
                         {
                             benefits_data.map((data, index)=>
-                                <Card key={index} className='flex flex-col md:flex-row lg:flex-col border-2 gap-8'>
+                                <Card key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8'>
                                     <Image src={data.icon} alt={`${data.title} logo`} />
                                     <div className='flex flex-col gap-4'>                        
                                         <Typography variant='h3' className='font-semibold'>{data.title}</Typography>
