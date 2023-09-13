@@ -7,7 +7,7 @@ export  const BMIResults = () => {
         <section>
             <div className='container mx-auto'>            
                 <div>
-                    <Typography variant='h2'>
+                    <Typography variant='h2' className='font-semibold'>
                         What your BMI result means
                     </Typography>
                     <Typography variant='paragraph'>                    
