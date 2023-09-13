@@ -5,7 +5,7 @@ import React from 'react';
 export  const BMIResults = () => {
     return (
         <section>
-            <div className='container mx-auto'>            
+            <div className='px-5 container mx-auto'>            
                 <div>
                     <Typography variant='h2' className='font-semibold'>
                         What your BMI result means
