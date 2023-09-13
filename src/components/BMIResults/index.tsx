@@ -8,7 +8,7 @@ export  const BMIResults = () => {
     return (
         <section>
             <div className='py-14 px-5 container mx-auto'>
-                <div className='flex sm:flex-row flex-col'>                
+                <div className='flex sm:flex-row flex-col gap-20'>                
                     <Image src={eating_image} alt='Eating Image'/>            
                     <div>
                         <Typography variant='h2' className='font-semibold'>
