@@ -2,7 +2,7 @@ import React from 'react';
 
 export  const BMIResults = () => {
     return (
-        <div>
+        <section>
             <div>
                 <h2>What your BMI result means</h2>
                 <p>
@@ -15,6 +15,6 @@ export  const BMIResults = () => {
                 30 minutes daily for five days a week.
                 </p>
             </div>
-        </div>
+        </section>
     );
 };
