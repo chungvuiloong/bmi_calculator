@@ -26,7 +26,7 @@ const benefits_data =[
 const Benefits = () => {
     return (
         <section className='
-        lg:mr-5 mr-0 
+        lg:mr-5 mr-0 lg:pl-5 pl-0 
         bg-[#d8e7fe] 
         lg:rounded-r-3xl rounded-none' >        
             <div className='py-14 px-5 container mx-auto'>
