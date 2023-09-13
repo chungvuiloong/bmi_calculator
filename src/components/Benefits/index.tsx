@@ -35,7 +35,7 @@ const Benefits = () => {
                         benefits_data.map((data, index)=>
                             <Card key={index} className='border-2'>
                                 <Image src={data.icon} alt={`${data.title} logo`} />
-                                <div className='flex flex-col gap-6'>                        
+                                <div className='flex flex-col gap-4'>                        
                                     <Typography variant='h3' className='font-semibold'>{data.title}</Typography>
                                     <Typography variant='paragraph'>{data.description}</Typography>
                                 </div>
