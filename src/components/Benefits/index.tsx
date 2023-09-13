@@ -25,18 +25,20 @@ const benefits_data =[
 ]
 const Benefits = () => {
     return (
-        <section className='container mx-auto'>
-            <div className='flex flex-row'>
-                {
-                    benefits_data.map((data, index)=>
-                        <Card key={index} className='border-2'>
-                            <div className='flex flex-col gap-6'>                        
-                                <Typography variant='h3'>{data.title}</Typography>
-                                <Typography variant='paragraph'>{data.description}</Typography>
-                            </div>
-                        </Card>
-                    )
-                }
+        <section className='mr-5 bg-[#d8e7fe] rounded-r-3xl'>        
+            <div className='container mx-auto'>
+                <div className='flex flex-row gap-8'>
+                    {
+                        benefits_data.map((data, index)=>
+                            <Card key={index} className='border-2'>
+                                <div className='flex flex-col gap-6'>                        
+                                    <Typography variant='h3'>{data.title}</Typography>
+                                    <Typography variant='paragraph'>{data.description}</Typography>
+                                </div>
+                            </Card>
+                        )
+                    }
+                </div>
             </div>
         </section>
     );
