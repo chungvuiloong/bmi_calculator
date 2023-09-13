@@ -27,19 +27,21 @@ const Benefits = () => {
     return (
         <section>
             <div className='py-14 bg-[#d8e7fe] lg:rounded-r-3xl rounded-none lg:mr-5'>
-                <div className='px-5 md:px-8 container mx-auto'>
-                    <div className='flex flex-col lg:flex-row gap-8'> 
-                        {
-                            benefits_data.map((data, index)=>
-                                <Card key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8'>
-                                    <Image src={data.icon} alt={`${data.title} logo`} />
-                                    <div className='flex flex-col gap-4'>                        
-                                        <Typography variant='h3' className='font-semibold'>{data.title}</Typography>
-                                        <Typography variant='paragraph'>{data.description}</Typography>
-                                    </div>
-                                </Card>
-                            )
-                        }
+                <div className='px-5 md:px-8'>
+                    <div className='container mx-auto'>                    
+                        <div className='flex flex-col lg:flex-row gap-8'> 
+                            {
+                                benefits_data.map((data, index)=>
+                                    <Card key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8'>
+                                        <Image src={data.icon} alt={`${data.title} logo`} />
+                                        <div className='flex flex-col gap-4'>                        
+                                            <Typography variant='h3' className='font-semibold'>{data.title}</Typography>
+                                            <Typography variant='paragraph'>{data.description}</Typography>
+                                        </div>
+                                    </Card>
+                                )
+                            }
+                        </div>
                     </div>
                 </div>
             </div>     
