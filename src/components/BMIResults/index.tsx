@@ -7,10 +7,14 @@ import React from 'react';
 export  const BMIResults = () => {
     return (
         <section>
-            <div className='py-14 px-5 container mx-auto'>
-                <div className='flex sm:flex-row flex-col gap-20'>                
-                    <Image src={eating_image} alt='Eating Image'/>            
-                    <div>
+            <div className='py-14 px-5 md:px-8 container mx-auto'>
+                <div className='flex md:flex-row flex-col gap-20'>                
+                    <Image 
+                        src={eating_image} 
+                        alt='Eating Image'
+                        className='basis-1/2'
+                    />            
+                    <div className='basis-1/2 self-center'>
                         <Typography variant='h2' className='font-semibold'>
                             What your BMI result means
                         </Typography>
