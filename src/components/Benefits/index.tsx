@@ -30,7 +30,8 @@ const Benefits = () => {
         bg-[#d8e7fe] 
         lg:rounded-r-3xl rounded-none' >        
             <div className='py-14 container mx-auto'>
-                <div className='flex flex-col lg:flex-row gap-8'>
+                <div className='lg:px-0 md:px-8 px-5 
+                flex flex-col lg:flex-row gap-8'> 
                     {
                         benefits_data.map((data, index)=>
                             <Card key={index} className='flex flex-col md:flex-row lg:flex-col border-2 gap-8'>
