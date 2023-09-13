@@ -25,7 +25,10 @@ const benefits_data =[
 ]
 const Benefits = () => {
     return (
-        <section className='mr-5 bg-[#d8e7fe] rounded-r-3xl'>        
+        <section className='
+        lg:mr-5 mr-0 
+        bg-[#d8e7fe] 
+        lg:rounded-r-3xl rounded-none' >        
             <div className='container mx-auto'>
                 <div className='flex flex-row gap-8'>
                     {
