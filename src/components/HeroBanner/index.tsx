@@ -4,7 +4,7 @@ import React from 'react';
     return (
         <section>
             <div className='py-14 bg-[#d8e7fe] lg:rounded-r-3xl rounded-none'>
-                <div className='px-5 md:px-8'>
+                <div className='px-5 md:px-8 xl:px-32 '>
                     <div className='container mx-auto flex'>   
                         <div className='basis-1/2'>
                             <h1>Body Mass Index Calculator</h1>
