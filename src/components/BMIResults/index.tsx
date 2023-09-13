@@ -7,7 +7,7 @@ import React from 'react';
 export  const BMIResults = () => {
     return (
         <section>
-            <div className='px-5 container mx-auto'>
+            <div className='py-14 px-5 container mx-auto'>
                 <div className='flex sm:flex-row flex-col'>                
                     <Image src={eating_image} alt='Eating Image'/>            
                     <div>
