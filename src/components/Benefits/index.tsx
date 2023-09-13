@@ -33,7 +33,7 @@ const Benefits = () => {
                 <div className='flex flex-row gap-8'>
                     {
                         benefits_data.map((data, index)=>
-                            <Card key={index} className='border-2'>
+                            <Card key={index} className='flex border-2 gap-8'>
                                 <Image src={data.icon} alt={`${data.title} logo`} />
                                 <div className='flex flex-col gap-4'>                        
                                     <Typography variant='h3' className='font-semibold'>{data.title}</Typography>
