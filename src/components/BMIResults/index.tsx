@@ -7,12 +7,12 @@ import React from 'react';
 export  const BMIResults = () => {
     return (
         <section>
-            <div className='py-14 px-5 md:px-8 container mx-auto'>
+            <div className='py-14 px-5 md:px-8 lg:container mx-auto'>
                 <div className='flex md:flex-row flex-col gap-20'>                
                     <Image 
                         src={eating_image} 
                         alt='Eating Image'
-                        className='basis-1/2'
+                        className='basis-1/2 m-w-[200px] h-fit'
                     />            
                     <div className='basis-1/2 self-center'>
                         <Typography variant='h2' className='font-semibold'>
