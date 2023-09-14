@@ -17,6 +17,10 @@ export  const HeroBanner = () => {
                                 starting point to evaluate your overall health and well-being.
                             </Typography>
                         </div>
+                        <div className='basis-1/2 flex flex-col'>
+                            
+
+                        </div>
                     </div>
                 </div>
             </div>
