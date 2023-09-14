@@ -18,8 +18,29 @@ export  const HeroBanner = () => {
                             </Typography>
                         </div>
                         <div className='basis-1/2 flex flex-col'>
-                            
+                            <Typography variant='h3'>Enter your details below</Typography>
+                            <div>
+                                <fieldset className='flex '>
+                                    <div className='basis-1/2 flex gap-2'>
+                                        <input type="radio" id="huey" name="drone" value="huey" checked />
+                                        <label>
+                                            <Typography variant='small' className='font-semibold'>Metrics</Typography>
+                                        </label>
+                                    </div>
+                                    <div className='basis-1/2 flex gap-2'>
+                                        <input type="radio" id="dewey" name="drone" value="dewey" />
+                                        <label>
+                                            <Typography variant='small' className='font-semibold'>Imperial</Typography>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
 
+
+                            <div>
+                                <Typography variant='h3'>Welcome!</Typography>
+                                <Typography variant='paragraph'>Enter your height and weight and you will see your results here.</Typography>
+                            </div>
                         </div>
                     </div>
                 </div>
