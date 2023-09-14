@@ -17,10 +17,10 @@ export  const HeroBanner = () => {
                                 starting point to evaluate your overall health and well-being.
                             </Typography>
                         </div>
-                        <div className='basis-1/2 flex flex-col bg-white rounded-2xl'>
+                        <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-7'>
                             <Typography variant='h3'>Enter your details below</Typography>
                             <div>
-                                <fieldset className='flex '>
+                                <fieldset className='flex'>
                                     <div className='basis-1/2 flex gap-2'>
                                         <input type="radio" id="huey" name="drone" value="huey" checked />
                                         <label>
@@ -35,8 +35,6 @@ export  const HeroBanner = () => {
                                     </div>
                                 </fieldset>
                             </div>
-
-
                             <div>
                                 <Typography variant='h3'>Welcome!</Typography>
                                 <Typography variant='paragraph'>Enter your height and weight and you will see your results here.</Typography>
