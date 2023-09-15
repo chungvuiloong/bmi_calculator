@@ -7,7 +7,7 @@ export  const HeroBanner = () => {
         <section>
             <div className='py-14 bg-[#d8e7fe] lg:rounded-r-3xl rounded-none'>
                 <div className='px-5 md:px-8 xl:px-32 '>
-                    <div className='container mx-auto flex'>   
+                    <div className='container mx-auto flex lg:gap-20 gap-12'>   
                         <div className='basis-1/2 flex flex-col gap-8'>
                             <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
                             <Typography variant='paragraph'>
@@ -18,7 +18,8 @@ export  const HeroBanner = () => {
                             </Typography>
                         </div>
                         <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-5'>
-                            <fieldset className="mt-4">
+                            <Typography variant='h3'>Enter your details below</Typography>
+                            <fieldset>
                                 <legend className="sr-only">Notification method</legend>
                                 <div className="flex gap-5">
                                     <div className="basis-1/2 flex items-center">
