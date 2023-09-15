@@ -17,8 +17,69 @@ export  const HeroBanner = () => {
                                 starting point to evaluate your overall health and well-being.
                             </Typography>
                         </div>
-                        <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-7'>
-                            <Typography variant='h3'>Enter your details below</Typography>
+                        <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-5'>
+                            <fieldset className="mt-4">
+                                <legend className="sr-only">Notification method</legend>
+                                <div className="flex gap-5">
+                                    <div className="basis-1/2 flex items-center">
+                                        <input
+                                            id=''
+                                            name="notification-method"
+                                            type="radio"
+                                                    // defaultChecked='email'
+                                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                                        />
+                                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
+                                                Title
+                                        </label>
+                                    </div>
+                                    <div className="basis-1/2 flex items-center">
+                                        <input
+                                                id=''
+                                                name="notification-method"
+                                                type="radio"
+                                                className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                                            />
+                                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
+                                                Title
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div className='flex flex-row gap-5'>
+                                        <div className='basis-1/2'>
+                                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                                                Height
+                                            </label>
+                                            <div className="mt-2">
+                                                <input
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                placeholder="you@example.com"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className='basis-1/2'>
+                                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                                                Weight
+                                            </label>
+                                            <div className="mt-2">
+                                                <input
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                placeholder="you@example.com"
+                                                />
+                                            </div>
+                                        </div>
+                            </div>
+                                        
+                            
+
+                            {/* <Typography variant='h3'>Enter your details below</Typography>
                             <div>
                                 <fieldset className='flex'>
                                     <div className='basis-1/2 flex gap-2'>
@@ -38,7 +99,7 @@ export  const HeroBanner = () => {
                             <div>
                                 <Typography variant='h3'>Welcome!</Typography>
                                 <Typography variant='paragraph'>Enter your height and weight and you will see your results here.</Typography>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
