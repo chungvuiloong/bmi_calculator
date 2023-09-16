@@ -47,12 +47,12 @@ function Bmi_calculator () {
                             name="height"
                             id="height"
                             className="block w-full rounded-md border-0
-                            px-3 py-2
+                            px-4 py-3
                             text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             placeholder="0"
                             aria-describedby="height-system"
                         />
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 sm:text-sm font-semibold" id="height-system">
                                 cm
                             </span>
@@ -69,12 +69,12 @@ function Bmi_calculator () {
                             name="weight"
                             id="weight"
                             className="block w-full rounded-md border-0
-                            px-3 py-2
+                            px-4 py-3
                             text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             placeholder="0"
                             aria-describedby="weight"
                         />
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 sm:text-sm font-semibold" id="weight-system">
                                 kg
                             </span>
