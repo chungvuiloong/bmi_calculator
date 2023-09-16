@@ -38,7 +38,7 @@ function Bmi_calculator () {
             </fieldset>
             <div className='flex sm:flex-row flex-col gap-5'>
                 <div className='basis-1/2'>
-                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-500">
                         Height
                     </label>                    
                     <div className="relative mt-1 rounded-md shadow-sm">
@@ -60,7 +60,7 @@ function Bmi_calculator () {
                     </div>
                 </div>
                 <div className='basis-1/2'>
-                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-500">
                      Weight
                     </label>
                     <div className="relative mt-1 rounded-md shadow-sm">
