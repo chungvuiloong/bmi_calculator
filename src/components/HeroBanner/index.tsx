@@ -82,7 +82,7 @@ function Bmi_calculator () {
                     </div>
                 </div>
             </div>
-            <div className='p-7 bg-sky-700 text-white flex flex-col gap-5' style={{ borderRadius: '1rem 100px 100px 1rem'}}>
+            <div className='p-7 bg-blue-700 text-white flex flex-col gap-5' style={{ borderRadius: '1rem 100px 100px 1rem'}}>
                 <Typography variant='h3'>Welcome!</Typography>
                 <Typography variant='paragraph'>Enter your height and weight and you will see your results here.</Typography>
             </div>
