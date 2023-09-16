@@ -7,7 +7,7 @@ function Bmi_calculator () {
         <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-7'>
             <Typography variant='h3'>Enter your details below</Typography>
             <fieldset>
-                <legend className="sr-only">Notification method</legend>
+                <legend className="sr-only">BMI Calculation</legend>
                 <div className="flex gap-5">
                     <div className="basis-1/2 flex items-center">
                         <input
