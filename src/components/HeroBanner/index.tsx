@@ -40,17 +40,45 @@ function Bmi_calculator () {
                 <div className='basis-1/2'>
                     <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                         Height
-                    </label>
-                    <div className="mt-1">
-                        <input type="email" name="email" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                    </label>                    
+                    <div className="relative mt-1 rounded-md shadow-sm">
+                        <input
+                            type="text"
+                            name="height"
+                            id="height"
+                            className="block w-full rounded-md border-0
+                            px-3 py-2
+                            text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            placeholder="0"
+                            aria-describedby="height-system"
+                        />
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                            <span className="text-blue-600 sm:text-sm font-semibold" id="height-system">
+                                cm
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div className='basis-1/2'>
                     <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                      Weight
                     </label>
-                    <div className="mt-1">
-                        <input type="email" name="email" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                    <div className="relative mt-1 rounded-md shadow-sm">
+                        <input
+                            type="text"
+                            name="weight"
+                            id="weight"
+                            className="block w-full rounded-md border-0
+                            px-3 py-2
+                            text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            placeholder="0"
+                            aria-describedby="weight"
+                        />
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                            <span className="text-blue-600 sm:text-sm font-semibold" id="weight-system">
+                                kg
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
