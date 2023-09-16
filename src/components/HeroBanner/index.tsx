@@ -2,6 +2,63 @@
 import { Typography } from '@material-tailwind/react';
 import React from 'react';
 
+function Bmi_calculator () {
+    return (
+        <>
+            <Typography variant='h3'>Enter your details below</Typography>
+            <fieldset>
+                <legend className="sr-only">Notification method</legend>
+                <div className="flex gap-5">
+                    <div className="basis-1/2 flex items-center">
+                        <input
+                            id=''
+                            name="notification-method"
+                            type="radio"
+                                    // defaultChecked='email'
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                        />
+                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
+                                Title
+                        </label>
+                    </div>
+                    <div className="basis-1/2 flex items-center">
+                        <input
+                                id=''
+                                name="notification-method"
+                                type="radio"
+                                className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                            />
+                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
+                                Title
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div className='flex flex-row gap-5'>
+                <div className='basis-1/2'>
+                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                        Height
+                    </label>
+                    <div className="mt-2">
+                        <input type="email" name="email" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                    </div>
+                </div>
+                <div className='basis-1/2'>
+                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                     Weight
+                    </label>
+                    <div className="mt-2">
+                        <input type="email" name="email" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Typography variant='h3'>Welcome!</Typography>
+                <Typography variant='paragraph'>Enter your height and weight and you will see your results here.</Typography>
+            </div>
+        </>
+    )
+}
 export  const HeroBanner = () => {
     return (
         <section>
@@ -18,89 +75,7 @@ export  const HeroBanner = () => {
                             </Typography>
                         </div>
                         <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-5'>
-                            <Typography variant='h3'>Enter your details below</Typography>
-                            <fieldset>
-                                <legend className="sr-only">Notification method</legend>
-                                <div className="flex gap-5">
-                                    <div className="basis-1/2 flex items-center">
-                                        <input
-                                            id=''
-                                            name="notification-method"
-                                            type="radio"
-                                                    // defaultChecked='email'
-                                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                                        />
-                                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
-                                                Title
-                                        </label>
-                                    </div>
-                                    <div className="basis-1/2 flex items-center">
-                                        <input
-                                                id=''
-                                                name="notification-method"
-                                                type="radio"
-                                                className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                                            />
-                                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
-                                                Title
-                                        </label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <div className='flex flex-row gap-5'>
-                                        <div className='basis-1/2'>
-                                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                                                Height
-                                            </label>
-                                            <div className="mt-2">
-                                                <input
-                                                type="email"
-                                                name="email"
-                                                id="email"
-                                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                                placeholder="you@example.com"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className='basis-1/2'>
-                                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                                                Weight
-                                            </label>
-                                            <div className="mt-2">
-                                                <input
-                                                type="email"
-                                                name="email"
-                                                id="email"
-                                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                                placeholder="you@example.com"
-                                                />
-                                            </div>
-                                        </div>
-                            </div>
-                                        
-                            
-
-                            {/* <Typography variant='h3'>Enter your details below</Typography>
-                            <div>
-                                <fieldset className='flex'>
-                                    <div className='basis-1/2 flex gap-2'>
-                                        <input type="radio" id="huey" name="drone" value="huey" checked />
-                                        <label>
-                                            <Typography variant='small' className='font-semibold'>Metrics</Typography>
-                                        </label>
-                                    </div>
-                                    <div className='basis-1/2 flex gap-2'>
-                                        <input type="radio" id="dewey" name="drone" value="dewey" />
-                                        <label>
-                                            <Typography variant='small' className='font-semibold'>Imperial</Typography>
-                                        </label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div>
-                                <Typography variant='h3'>Welcome!</Typography>
-                                <Typography variant='paragraph'>Enter your height and weight and you will see your results here.</Typography>
-                            </div> */}
+                            <Bmi_calculator />
                         </div>
                     </div>
                 </div>
