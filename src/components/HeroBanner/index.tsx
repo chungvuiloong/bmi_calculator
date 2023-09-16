@@ -92,7 +92,7 @@ function Bmi_calculator () {
 export  const HeroBanner = () => {
     return (
         <section>
-            <div className='py-14 bg-[#d8e7fe] lg:rounded-r-3xl rounded-none'>
+            <div className='py-14 bg-gradient-to-r from-sky-50 to-blue-200 lg:rounded-r-3xl rounded-none'>
                 <div className='px-5 md:px-8 xl:px-32 '>
                     <div className='container mx-auto flex lg:gap-20 gap-12'>   
                         <div className='basis-1/2 flex flex-col gap-8'>
