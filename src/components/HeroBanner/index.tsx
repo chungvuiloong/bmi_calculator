@@ -18,7 +18,7 @@ function Bmi_calculator () {
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                         />
                         <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
-                                Title
+                                Metric
                         </label>
                     </div>
                     <div className="basis-1/2 flex items-center">
@@ -29,7 +29,7 @@ function Bmi_calculator () {
                                 className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                             />
                         <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
-                                Title
+                                Imperial
                         </label>
                     </div>
                 </div>
