@@ -7,7 +7,7 @@ import React from 'react';
 function Bmi_calculator () {
     return (
         <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 shadow-xl'>
-            <Typography variant='h3'>Enter your details below</Typography>
+            <Typography variant='h4'>Enter your details below</Typography>
             <fieldset>
                 <legend className="sr-only">BMI Calculation</legend>
                 <div className="flex gap-5">
