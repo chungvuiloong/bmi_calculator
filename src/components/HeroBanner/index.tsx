@@ -85,7 +85,7 @@ function Bmi_calculator () {
                 </div>
             </div>
             <div className='p-7 bg-gradient-to-r from-blue-700 to-blue-500 text-white flex flex-col gap-5 
-             rounded-tl-xl  rounded-bl-xl rounded-tr-4xl rounded-br-4xl'>
+             rounded-tl-[15px]  rounded-bl-[15px] rounded-tr-[100px] rounded-br-[100px]'>
                 <Typography variant='h3'>Welcome!</Typography>
                 <Typography variant='paragraph' color='white'>Enter your height and weight and you will see your results here.</Typography>
             </div>
