@@ -6,7 +6,7 @@ import React from 'react';
 
 function Bmi_calculator () {
     return (
-        <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6'>
+        <div className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 '>
             <Typography variant='h3'>Enter your details below</Typography>
             <fieldset>
                 <legend className="sr-only">BMI Calculation</legend>
@@ -95,7 +95,7 @@ export  const HeroBanner = () => {
     return (
         <section className='relative'>
             <div className=' py-14  '>
-                <div className='absolute ml-5 -bottom-12 -top-20 left-0 right-1/2 bg-gradient-to-br from-sky-50 to-blue-200 lg:rounded-b-3xl rounded-none'>
+                <div className='absolute ml-5 -bottom-12 -top-20 left-0 right-1/4 bg-gradient-to-br from-sky-50 to-blue-200 lg:rounded-b-3xl rounded-none'>
                 </div>
                 <div className='relative px-5 md:px-8 xl:px-32 z-10'>
                     <div className='container mx-auto'>                        
@@ -105,7 +105,7 @@ export  const HeroBanner = () => {
                             height={50} 
                             width={50}/>
                         <div className='flex lg:flex-row flex-col lg:gap-20 gap-12'>
-                            <div className='basis-1/2 flex flex-col justify-center gap-8'>
+                            <div className='basis-1/2 flex flex-col justify-center gap-8 '>
                                 <Typography variant='h1' className='lg:text-left text-center'>Body Mass<br/>Index Calculator</Typography>
                                 <Typography variant='paragraph' className='lg:text-left text-center'>
                                     Better understand your weight in relation to your height using
