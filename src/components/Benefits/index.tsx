@@ -23,7 +23,7 @@ const benefits_data =[
         icon:  icon_sleep
     }
 ]
-const Benefits = () => {
+export const Benefits = () => {
     return (
         <section className='relative'>
             <div className='py-14'>
@@ -68,5 +68,3 @@ const Benefits = () => {
         </section>
     );
 };
-
-export default Benefits;
