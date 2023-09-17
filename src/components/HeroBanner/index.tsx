@@ -1,5 +1,7 @@
 'use client'
 import { Typography } from '@material-tailwind/react';
+import Blue_wavey_circle from '@/assets/images/logo.svg'
+import Image from 'next/image';
 import React from 'react';
 
 function Bmi_calculator () {
@@ -95,6 +97,7 @@ export  const HeroBanner = () => {
             <div className='py-14 bg-gradient-to-r from-sky-50 to-blue-200 lg:rounded-b-lg rounded-none'>
                 <div className='px-5 md:px-8 xl:px-32 '>
                     <div className='container mx-auto flex lg:gap-20 gap-12'>   
+                        <Image src={Blue_wavey_circle} alt='Blue circle' />
                         <div className='basis-1/2 flex flex-col gap-8'>
                             <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
                             <Typography variant='paragraph'>
