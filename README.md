@@ -1,5 +1,5 @@
 # Body Mass Index (BMI) calculator 
-This is a front-end challenge [Body Mass Index (BMI) calculator ](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T) from [Frontend Mentor](https://www.frontendmentor.io/)
+This is a premium front-end challenge [Body Mass Index (BMI) calculator ](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T) from [Frontend Mentor](https://www.frontendmentor.io/)
 
 ## Technologies used
 [Next.js](https://nextjs.org/) <br>
