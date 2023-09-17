@@ -99,7 +99,7 @@ export  const HeroBanner = () => {
                     <div className='container mx-auto'>                        
                         <Image src={Blue_wavey_circle} alt='Blue circle' />
                         <div className='flex lg:gap-20 gap-12'>
-                            <div className='basis-1/2 flex flex-col gap-8'>
+                            <div className='basis-1/2 flex flex-col justify-center gap-8'>
                                 <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
                                 <Typography variant='paragraph'>
                                     Better understand your weight in relation to your height using
