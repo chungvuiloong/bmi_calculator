@@ -96,18 +96,20 @@ export  const HeroBanner = () => {
         <section>
             <div className='py-14 bg-gradient-to-r from-sky-50 to-blue-200 lg:rounded-b-lg rounded-none'>
                 <div className='px-5 md:px-8 xl:px-32 '>
-                    <div className='container mx-auto flex lg:gap-20 gap-12'>   
+                    <div className='container mx-auto'>                        
                         <Image src={Blue_wavey_circle} alt='Blue circle' />
-                        <div className='basis-1/2 flex flex-col gap-8'>
-                            <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
-                            <Typography variant='paragraph'>
-                                Better understand your weight in relation to your height using
-                                our body mass index (BM) calculator. While BMI is not the
-                                sole determinant of a healthy weight, it offers a valuable
-                                starting point to evaluate your overall health and well-being.
-                            </Typography>
+                        <div className='flex lg:gap-20 gap-12'>
+                            <div className='basis-1/2 flex flex-col gap-8'>
+                                <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
+                                <Typography variant='paragraph'>
+                                    Better understand your weight in relation to your height using
+                                    our body mass index (BM) calculator. While BMI is not the
+                                    sole determinant of a healthy weight, it offers a valuable
+                                    starting point to evaluate your overall health and well-being.
+                                </Typography>
+                            </div>
+                            <Bmi_calculator />
                         </div>
-                        <Bmi_calculator />
                     </div>
                 </div>
             </div>
