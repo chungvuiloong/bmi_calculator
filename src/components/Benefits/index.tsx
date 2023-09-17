@@ -25,9 +25,12 @@ const benefits_data =[
 ]
 const Benefits = () => {
     return (
-        <section>
-            <div className='py-14 bg-gradient-to-br from-sky-50 to-sky-100 lg:rounded-r-3xl rounded-none lg:mr-5'>
-                <div className='px-5 md:px-8 xl:px-32'>
+        <section className='relative'>
+            <div className='py-14'>
+                <div className='absolute lg:mr-5 mr-0 bottom-0
+                top-0 left-0 right-0 bg-gradient-to-br from-sky-50 to-sky-100 lg:rounded-r-3xl rounded-none'>
+                </div>
+                <div className='relative px-5 md:px-8 xl:px-32'>
                     <div className='container mx-auto'>                    
                         <div className='flex flex-col lg:flex-row gap-8'> 
                             {
@@ -44,6 +47,23 @@ const Benefits = () => {
                         </div>
                     </div>
                 </div>
+                {/* <div className='px-5 md:px-8 xl:px-32'>
+                    <div className='container mx-auto'>                    
+                        <div className='flex flex-col lg:flex-row gap-8'> 
+                            {
+                                benefits_data.map((data, index)=>
+                                    <div key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8 bg-transparent'>
+                                        <Image src={data.icon} alt={`${data.title} logo`} />
+                                        <div className='flex flex-col gap-4'>                        
+                                            <Typography variant='h5' className='font-semibold'>{data.title}</Typography>
+                                            <Typography variant='paragraph'>{data.description}</Typography>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        </div>
+                    </div>
+                </div> */}
             </div>     
         </section>
     );
