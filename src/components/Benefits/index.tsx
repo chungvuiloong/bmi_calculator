@@ -4,7 +4,7 @@ import icon_eating from '@/assets/images/icon-eating.svg'
 import icon_exercise from '@/assets/images/icon-exercise.svg'
 import icon_sleep from '@/assets/images/icon-sleep.svg'
 import Image from 'next/image';
-import { Card, Typography } from '@material-tailwind/react';
+import { Typography } from '@material-tailwind/react';
 
 const benefits_data =[
     {
@@ -32,13 +32,13 @@ const Benefits = () => {
                         <div className='flex flex-col lg:flex-row gap-8'> 
                             {
                                 benefits_data.map((data, index)=>
-                                    <Card key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8 bg-transparent'>
+                                    <div key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8 bg-transparent'>
                                         <Image src={data.icon} alt={`${data.title} logo`} />
                                         <div className='flex flex-col gap-4'>                        
                                             <Typography variant='h5' className='font-semibold'>{data.title}</Typography>
                                             <Typography variant='paragraph'>{data.description}</Typography>
                                         </div>
-                                    </Card>
+                                    </div>
                                 )
                             }
                         </div>
