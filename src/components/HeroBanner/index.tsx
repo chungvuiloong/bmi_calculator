@@ -104,8 +104,8 @@ export  const HeroBanner = () => {
                             width={50}/>
                         <div className='flex lg:flex-row flex-col lg:gap-20 gap-12'>
                             <div className='basis-1/2 flex flex-col justify-center gap-8'>
-                                <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
-                                <Typography variant='paragraph'>
+                                <Typography variant='h1' className='lg:text-left text-center'>Body Mass<br/>Index Calculator</Typography>
+                                <Typography variant='paragraph' className='lg:text-left text-center'>
                                     Better understand your weight in relation to your height using
                                     our body mass index (BM) calculator. While BMI is not the
                                     sole determinant of a healthy weight, it offers a valuable
