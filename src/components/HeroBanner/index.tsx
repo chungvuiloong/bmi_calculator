@@ -97,7 +97,7 @@ export  const HeroBanner = () => {
             <div className='py-14 bg-gradient-to-r from-sky-50 to-blue-200 lg:rounded-b-lg rounded-none'>
                 <div className='px-5 md:px-8 xl:px-32 '>
                     <div className='container mx-auto'>                        
-                        <Image src={Blue_wavey_circle} alt='Blue circle' />
+                        <Image src={Blue_wavey_circle} alt='Blue circle' className='mb-8'/>
                         <div className='flex lg:gap-20 gap-12'>
                             <div className='basis-1/2 flex flex-col justify-center gap-8'>
                                 <Typography variant='h1'>Body Mass<br/>Index Calculator</Typography>
