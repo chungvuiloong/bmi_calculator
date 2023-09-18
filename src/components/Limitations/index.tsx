@@ -41,19 +41,27 @@ export const Limitation = () => {
         <section className='relative'>
             <div className='py-14'>
                 <div className='relative px-5 md:px-8 xl:px-32 z-10'>
-                    <div className='container mx-auto flex lg:flex-row flex-col gap-12'>            
-                        <div className='basis-1/2 flex flex-col gap-4'>          
+                    <div className='container mx-auto flex lg:flex-row flex-col gap-12 w-fit'>
+                        {/* <div className='grid grid-cols-6 gap-4'>
+                            <div className='col-start-1 col-span-3 bg-red-500'>Text </div>
+                            <div className='col-start-4 col-span-2 bg-blue-500'>First Test</div>
+                            <div className='col-start-3 col-span-2 bg-blue-700'>Second Test</div>
+                            <div className='col-start-5 col-span-2 bg-gray-700'>Second Test</div>
+                            <div className='col-start-2 col-span-2 bg-blue-700'>Second Test</div>
+                            <div className='col-start-4 col-span-2 bg-gray-700'>Second Test</div>
+                        </div>             */}
+                        {/* <div className='basis-1/2 flex flex-col gap-4 h-fit'>          
                             <Typography variant='h2' className='font-semibold'>Limitations of BMI</Typography>
                             <Typography variant='paragraph'>
                                 Although BMI is often a practical indicator of healthy weight, 
                                 it is not suited for every person. Specific groups should carefully consider their BMI outcomes, 
                                 and in certain cases, the measurement may not be beneficial to use.
                             </Typography>
-                        </div>
-                        <div>
+                        </div> */}
+                        {/* <div className='basis-1/2 flex flex-row flex-wrap'>
                             {
                                 limitation_card_data.map((data, index)=>
-                                    <Card key={index}>
+                                    <Card key={index} className='w-[200px] border-2'>
                                         <div className='flex flex-row gap-3'>
                                             <Image src={data.icon} alt={`${data.title} icon`} height={30} width={30} />
                                             <div className='flex flex-col justify-center'>
@@ -66,7 +74,7 @@ export const Limitation = () => {
                                     </Card>
                                 )
                             }
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
