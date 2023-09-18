@@ -58,7 +58,7 @@ export const Limitation = () => {
                             </div>
                             {
                                 limitation_card_data.map((data, index) =>
-                                    <Card key={index} className={`${data.class} p-7 shadow-2xl flex gap-4`}>
+                                    <Card key={index} className={`${data.class} p-7 rounded-2xl  shadow-2xl flex gap-4`}>
                                         <div className='flex flex-row gap-3'>
                                             <Image src={data.icon} alt={`${data.title} icon`} height={30} width={30} />
                                             <div className='flex flex-col justify-center'>
