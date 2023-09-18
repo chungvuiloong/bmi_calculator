@@ -1,26 +1,36 @@
 'use client'
-import { Typography } from '@material-tailwind/react';
-import React from 'react';
+import { Card, Typography } from '@material-tailwind/react'
+import React from 'react'
+import gender_icon from '@/assets/images/icon-gender.svg'
+import age_icon from '@/assets/images/icon-age.svg'
+import muscle_icon from '@/assets/images/icon-muscle.svg'
+import pregnancy_icon from '@/assets/images/icon-pregnancy.svg'
+import race_icon from '@/assets/images/icon-race.svg'
 
 const limitation_card_data =  [
     {
         title: "Gender",
+        icon: gender_icon,
         description: "The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."
     },
     {
         title: "Age",
+        icon: age_icon,
         description: "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content."
     },
     {
         title: "Muscle",
+        icon: muscle_icon,
         description: "BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat."
     },
     {
         title: "Pregnancy",
+        icon: pregnancy_icon,
         description: "Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child."
     },
     {
         title: "Race",
+        icon: race_icon,
         description: "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practical nurse."
     }
 ]
@@ -40,7 +50,13 @@ export const Limitation = () => {
                             </Typography>
                         </div>
                         <div>
-                            Cards
+                            {
+                                limitation_card_data.map((data, index)=>
+                                    <Card key={index}>
+                                        {data.title}
+                                    </Card>
+                                )
+                            }
                         </div>
                     </div>
                 </div>
