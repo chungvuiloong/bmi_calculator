@@ -6,6 +6,7 @@ import age_icon from '@/assets/images/icon-age.svg'
 import muscle_icon from '@/assets/images/icon-muscle.svg'
 import pregnancy_icon from '@/assets/images/icon-pregnancy.svg'
 import race_icon from '@/assets/images/icon-race.svg'
+import curved_line from '@/assets/images/pattern-curved-line-right.svg'
 import Image from 'next/image'
 
 const limitation_card_data =  [
@@ -14,6 +15,10 @@ const limitation_card_data =  [
         icon: gender_icon,
         class: "lg:ml-6 ml-0 lg:col-start-4 col-span-2 ",
         description: "The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."
+    },
+    {
+        icon: curved_line,
+        class: "col-start-2 col-span-1",
     },
     {
         title: "Age",
@@ -57,18 +62,20 @@ export const Limitation = () => {
                                 </Typography> 
                             </div>
                             {
-                                limitation_card_data.map((data, index) =>
-                                    <Card key={index} className={`${data.class} p-7 rounded-2xl  shadow-2xl flex gap-4`}>
-                                        <div className='flex flex-row gap-3'>
-                                            <Image src={data.icon} alt={`${data.title} icon`} height={30} width={30} />
-                                            <div className='flex flex-col justify-center'>
-                                                <Typography variant='h6'>{data.title}</Typography>
+                                limitation_card_data.map((data, index) => 
+                                    data.icon === curved_line ? 
+                                        <Image src={curved_line} alt='Curved line' key='curved line' className={`-mt-[20px] ${data.class} lg:block hidden`}/> :
+                                        <Card key={index} className={`${data.class} p-7 rounded-2xl  shadow-2xl flex gap-4`}>
+                                            <div className='flex flex-row gap-3'>
+                                                <Image src={data.icon} alt={`${data.title} icon`} height={30} width={30} />
+                                                <div className='flex flex-col justify-center'>
+                                                    <Typography variant='h6'>{data.title}</Typography>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <Typography variant='paragraph'>
-                                            {data.description}
-                                        </Typography>
-                                    </Card>
+                                            <Typography variant='paragraph'>
+                                                {data.description}
+                                            </Typography>
+                                        </Card>
                                 )
                             }
                             {/* <div className='col-start-4 col-span-2 bg-blue-500'>First Test</div>
