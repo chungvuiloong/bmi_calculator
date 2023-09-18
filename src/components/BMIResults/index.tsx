@@ -2,22 +2,29 @@
 import { Typography } from '@material-tailwind/react';
 import Image from 'next/image';
 import eating_image from '@/assets/images/image-man-eating.webp'
+import curved_line from '@/assets/images/pattern-curved-line-left.svg'
 import React from 'react';
 
 export  const BMIResults = () => {
     return (
-        <section className='py-14 '>
+        <section className='pb-14'>
             <div className='px-5 md:px-0 lg:px-8 xl:px-32'>
                 <div className='container mx-auto'>                
                     <div className='flex md:flex-row flex-col lg:gap-20 gap-12'>
-                        <div className='basis-1/2'>                    
+                        <div className='basis-1/2 pt-14'>                    
                             <Image 
                                 src={eating_image} 
                                 alt='Eating Image'
                                 className='ml-0 md:-ml-10 lg:ml-0 m-w-[200px] h-fit'
                             />   
                         </div>
-                        <div className='basis-1/2 self-center flex flex-col gap-8'>
+                        <div className='relative  basis-1/2 flex flex-col gap-8'>
+                            <Image 
+                                src={curved_line} 
+                                alt='Curved line'
+                                height={150}
+                                className='hidden lg:block self-end mr-10'
+                            />
                             <Typography variant='h2' className='font-semibold'>
                                 What your BMI result means
                             </Typography>
