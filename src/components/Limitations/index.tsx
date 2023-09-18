@@ -30,7 +30,7 @@ export const Limitation = () => {
         <section className='relative'>
             <div className='py-14'>
                 <div className='relative px-5 md:px-8 xl:px-32 z-10'>
-                    <div className='container mx-auto flex gap-12'>            
+                    <div className='container mx-auto flex lg:flex-row flex-col gap-12'>            
                         <div className='basis-1/2 flex flex-col gap-4'>          
                             <Typography variant='h2' className='font-semibold'>Limitations of BMI</Typography>
                             <Typography variant='paragraph'>
