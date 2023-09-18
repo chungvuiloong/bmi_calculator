@@ -6,6 +6,7 @@ import age_icon from '@/assets/images/icon-age.svg'
 import muscle_icon from '@/assets/images/icon-muscle.svg'
 import pregnancy_icon from '@/assets/images/icon-pregnancy.svg'
 import race_icon from '@/assets/images/icon-race.svg'
+import Image from 'next/image'
 
 const limitation_card_data =  [
     {
@@ -53,7 +54,15 @@ export const Limitation = () => {
                             {
                                 limitation_card_data.map((data, index)=>
                                     <Card key={index}>
-                                        {data.title}
+                                        <div className='flex flex-row gap-3'>
+                                            <Image src={data.icon} alt={`${data.title} icon`} height={30} width={30} />
+                                            <div className='flex flex-col justify-center'>
+                                                <Typography variant='h6'>{data.title}</Typography>
+                                            </div>
+                                        </div>
+                                        <Typography variant='paragraph'>
+                                            {data.description}
+                                        </Typography>
                                     </Card>
                                 )
                             }
