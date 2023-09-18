@@ -12,31 +12,31 @@ const limitation_card_data =  [
     {
         title: "Gender",
         icon: gender_icon,
-        class: "lg:ml-6 ml-0 lg:col-start-4 md:col-span-2 col-span-1",
+        class: "lg:ml-6 ml-0 lg:col-start-4 col-span-2 ",
         description: "The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."
     },
     {
         title: "Age",
         icon: age_icon,
-        class: "lg:col-start-3 md:col-span-2 col-span-1",
+        class: "lg:col-start-3 col-span-2",
         description: "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content."
     },
     {
         title: "Muscle",
         icon: muscle_icon,
-        class: "lg:col-start-5 md:col-span-2 col-span-1",
+        class: "lg:col-start-5 col-span-2",
         description: "BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat."
     },
     {
         title: "Pregnancy",
         icon: pregnancy_icon,
-        class: "lg:col-start-2 md:col-span-2 col-span-1",
+        class: "lg:col-start-2 col-span-2",
         description: "Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child."
     },
     {
         title: "Race",
         icon: race_icon,
-        class: "lg:col-start-4 md:col-span-2 col-span-1",
+        class: "lg:col-start-4 md:col-start-2 col-span-2",
         description: "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practical nurse."
     }
 ]
@@ -47,8 +47,8 @@ export const Limitation = () => {
             <div className='py-14'>
                 <div className='relative px-5 md:px-8 xl:px-32 z-10'>
                     <div className='container mx-auto'>
-                        <div className='grid lg:grid-cols-6 md:grid-cols-4 grid-cols-4 gap-6'>
-                            <div className='lg:mr-6 mr-0 lg:col-start-1 lg:col-span-3 md:col-span-4 col-span-2 flex flex-col gap-4'>
+                        <div className='grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6'>
+                            <div className='lg:mr-6 mr-0 lg:col-start-1 lg:col-span-3 md:col-span-4 col-span-2 flex flex-col gap-4 lg:text-left text-center'>
                                 <Typography variant='h2' className='font-semibold'>Limitations of BMI</Typography>
                                 <Typography variant='paragraph'>
                                     Although BMI is often a practical indicator of healthy weight, 
