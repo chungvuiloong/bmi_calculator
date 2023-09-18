@@ -95,8 +95,8 @@ function Bmi_calculator () {
 export  const HeroBanner = () => {
     return (
         <section className='relative'>
-            <div className='py-14'>
-                <div className='absolute lg:ml-5 ml-0 lg:-bottom-12 bottom-60
+            <div className='pt-14 pb-24'>
+                <div className='absolute lg:ml-5 ml-0 lg:bottom-0 bottom-60
                 -top-20 left-0 lg:right-1/4 right-0 bg-gradient-to-br from-sky-50 to-blue-200 rounded-b-3xl'>
                 </div>
                 <div className='relative px-5 md:px-8 xl:px-32 z-10'>
