@@ -18,7 +18,7 @@ export  const BMIResults = () => {
                                 className='ml-0 md:-ml-10 lg:ml-0 m-w-[200px] h-fit'
                             />   
                         </div>
-                        <div className='relative  basis-1/2 flex flex-col gap-8'>
+                        <div className='relative lg:pt-0 md:pt-14 pt-0 basis-1/2 flex flex-col gap-8'>
                             <Image 
                                 src={curved_line} 
                                 alt='Curved line'
