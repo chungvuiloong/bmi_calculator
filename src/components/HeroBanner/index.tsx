@@ -6,12 +6,8 @@ import React, { useState, useId, useEffect } from 'react';
 
 function Bmi_calculator () {
     const toBeSelectedId = useId();
-    const [selectedTopping, setSelectedTopping] = useState('Metrics');
+    const [selected, setSelected] = useState('Metrics');
   
-    useEffect(() => {
-      document.querySelector(`[data-id="${toBeSelectedId}"]`).checked = true;
-    }, [toBeSelectedId]);
-    console.log(selectedTopping);
     return (
         <Card className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 shadow-xl'>
             <Typography variant='h5'>Enter your details below</Typography>
@@ -21,11 +17,11 @@ function Bmi_calculator () {
                     <div className="basis-1/2 flex items-center gap-5">
                         <input 
                             type="radio" 
-                            name="topping" 
+                            name="" 
                             value="Metrics" 
                             id="metrics" 
-                            checked={selectedTopping === 'Metrics'}
-                            onChange={e => setSelectedTopping(e.target.value)}
+                            checked={selected === 'Metrics'}
+                            onChange={e => setSelected(e.target.value)}
                             data-id={toBeSelectedId}
                             className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
@@ -34,11 +30,11 @@ function Bmi_calculator () {
                     <div className="basis-1/2 flex items-center gap-5">
                         <input 
                             type="radio" 
-                            name="topping" 
+                            name="" 
                             value="Imperial" 
                             id="imperial" 
-                            checked={selectedTopping === 'Imperial'}
-                            onChange={e => setSelectedTopping(e.target.value)}
+                            checked={selected === 'Imperial'}
+                            onChange={e => setSelected(e.target.value)}
                             className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
                         <label htmlFor="imperial" className='text-sm font-medium leading-6 text-gray-900'>Imperial</label>
@@ -63,7 +59,7 @@ function Bmi_calculator () {
                         />
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 text-xl font-semibold" id="height-system">
-                                {selectedTopping === "Metrics" ? 'cm' : 'inches'}
+                                {selected === "Metrics" ? 'cm' : 'inches'}
                             </span>
                         </div>
                     </div>
@@ -85,7 +81,7 @@ function Bmi_calculator () {
                         />
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 text-xl font-semibold" id="weight-system">
-                                {selectedTopping === "Metrics" ? 'kg' : 'pounds'}
+                                {selected === "Metrics" ? 'kg' : 'pounds'}
                             </span>
                         </div>
                     </div>
