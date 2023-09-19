@@ -10,8 +10,6 @@ function Bmi_calculator () {
   
     useEffect(() => {
       document.querySelector(`[data-id="${toBeSelectedId}"]`).checked = true;
-      // or even with
-      document.querySelector(`[type=radio][name=topping][value=Medium]`).checked = true;
     }, [toBeSelectedId]);
 
     return (
