@@ -36,7 +36,7 @@ export const Benefits = () => {
                             {
                                 benefits_data.map((data, index)=>
                                     <div key={index} className='flex flex-col md:flex-row lg:flex-col  gap-8 bg-transparent'>
-                                        <Image src={data.icon} alt={`${data.title} logo`} />
+                                        <Image src={data.icon} alt={`${data.title} logo`} height={50}/>
                                         <div className='flex flex-col gap-4'>                        
                                             <Typography variant='h5' className='font-semibold'>{data.title}</Typography>
                                             <Typography variant='paragraph'>{data.description}</Typography>
