@@ -2,7 +2,7 @@
 import { Card, Typography } from '@material-tailwind/react';
 import Blue_wavey_circle from '@/assets/images/logo.svg'
 import Image from 'next/image';
-import React, { useState, useId, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function Bmi_calculator () {
     const [selected, setSelected] = useState('Metrics');
