@@ -6,12 +6,12 @@ import React, { useState, useId, useEffect } from 'react';
 
 function Bmi_calculator () {
     const toBeSelectedId = useId();
-    const [selectedTopping, setSelectedTopping] = useState('Regular');
+    const [selectedTopping, setSelectedTopping] = useState('Metrics');
   
     useEffect(() => {
       document.querySelector(`[data-id="${toBeSelectedId}"]`).checked = true;
     }, [toBeSelectedId]);
-
+    console.log(selectedTopping);
     return (
         <Card className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 shadow-xl'>
             <Typography variant='h5'>Enter your details below</Typography>
@@ -22,26 +22,26 @@ function Bmi_calculator () {
                         <input 
                             type="radio" 
                             name="topping" 
-                            value="Regular" 
-                            id="regular" 
-                            checked={selectedTopping === 'Regular'}
+                            value="Metrics" 
+                            id="metrics" 
+                            checked={selectedTopping === 'Metrics'}
                             onChange={e => setSelectedTopping(e.target.value)}
                             data-id={toBeSelectedId}
                             className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
-                        <label htmlFor="regular" className='text-sm font-medium leading-6 text-gray-900'>Regular</label>
+                        <label htmlFor="metrics" className='text-sm font-medium leading-6 text-gray-900'>Metrics</label>
                     </div>
                     <div className="basis-1/2 flex items-center gap-5">
                         <input 
                             type="radio" 
                             name="topping" 
-                            value="Medium" 
-                            id="medium" 
-                            checked={selectedTopping === 'Medium'}
+                            value="Imperial" 
+                            id="imperial" 
+                            checked={selectedTopping === 'Imperial'}
                             onChange={e => setSelectedTopping(e.target.value)}
                             className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
-                        <label htmlFor="medium" className='text-sm font-medium leading-6 text-gray-900'>Medium</label>
+                        <label htmlFor="imperial" className='text-sm font-medium leading-6 text-gray-900'>Imperial</label>
                     </div>
                 </div>
             </fieldset>
