@@ -5,7 +5,6 @@ import Image from 'next/image';
 import React, { useState, useId, useEffect } from 'react';
 
 function Bmi_calculator () {
-    const toBeSelectedId = useId();
     const [selected, setSelected] = useState('Metrics');
   
     return (
@@ -22,7 +21,6 @@ function Bmi_calculator () {
                             id="metrics" 
                             checked={selected === 'Metrics'}
                             onChange={e => setSelected(e.target.value)}
-                            data-id={toBeSelectedId}
                             className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
                         <label htmlFor="metrics" className='text-sm font-medium leading-6 text-gray-900'>Metrics</label>
