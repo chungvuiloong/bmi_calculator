@@ -21,7 +21,7 @@ function Bmi_calculator () {
                             id="metrics" 
                             checked={selected === 'Metrics'}
                             onChange={e => setSelected(e.target.value)}
-                            className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
+                            className='lg:h-4 lg:w-4 h-7 w-7 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
                         <label htmlFor="metrics" className='text-sm font-medium leading-6 text-gray-900'>Metrics</label>
                     </div>
@@ -33,7 +33,7 @@ function Bmi_calculator () {
                             id="imperial" 
                             checked={selected === 'Imperial'}
                             onChange={e => setSelected(e.target.value)}
-                            className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
+                            className='lg:h-4 lg:w-4 h-7 w-7 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
                         <label htmlFor="imperial" className='text-sm font-medium leading-6 text-gray-900'>Imperial</label>
                     </div>
