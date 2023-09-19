@@ -2,39 +2,48 @@
 import { Card, Typography } from '@material-tailwind/react';
 import Blue_wavey_circle from '@/assets/images/logo.svg'
 import Image from 'next/image';
-import React from 'react';
+import React, { useState, useId, useEffect } from 'react';
 
 function Bmi_calculator () {
+    const toBeSelectedId = useId();
+    const [selectedTopping, setSelectedTopping] = useState('Regular');
+  
+    useEffect(() => {
+      document.querySelector(`[data-id="${toBeSelectedId}"]`).checked = true;
+      // or even with
+      document.querySelector(`[type=radio][name=topping][value=Medium]`).checked = true;
+    }, [toBeSelectedId]);
+
     return (
         <Card className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 shadow-xl'>
             <Typography variant='h5'>Enter your details below</Typography>
             <fieldset>
                 <legend className="sr-only">BMI Calculation</legend>
                 <div className="flex gap-5">
-                    <div className="basis-1/2 flex items-center">
-                        <input
-                            id=''
-                            name="notification-method"
-                            type="radio"
-                            value="metric"
-                            checked
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    <div className="basis-1/2 flex items-center gap-5">
+                        <input 
+                            type="radio" 
+                            name="topping" 
+                            value="Regular" 
+                            id="regular" 
+                            checked={selectedTopping === 'Regular'}
+                            onChange={e => setSelectedTopping(e.target.value)}
+                            data-id={toBeSelectedId}
+                            className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
                         />
-                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
-                                Metric
-                        </label>
+                        <label htmlFor="regular" className='text-sm font-medium leading-6 text-gray-900'>Regular</label>
                     </div>
-                    <div className="basis-1/2 flex items-center">
-                        <input
-                                id=''
-                                name="notification-method"
-                                type="radio"
-                                value="imperial"
-                                className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                            />
-                        <label htmlFor='' className="ml-3 block text-sm font-medium leading-6 text-gray-900">
-                                Imperial
-                        </label>
+                    <div className="basis-1/2 flex items-center gap-5">
+                        <input 
+                            type="radio" 
+                            name="topping" 
+                            value="Medium" 
+                            id="medium" 
+                            checked={selectedTopping === 'Medium'}
+                            onChange={e => setSelectedTopping(e.target.value)}
+                            className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600'
+                        />
+                        <label htmlFor="medium" className='text-sm font-medium leading-6 text-gray-900'>Medium</label>
                     </div>
                 </div>
             </fieldset>
