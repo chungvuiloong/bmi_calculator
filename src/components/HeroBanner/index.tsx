@@ -63,7 +63,7 @@ function Bmi_calculator () {
                         />
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 text-xl font-semibold" id="height-system">
-                                cm
+                                {selectedTopping === "Metrics" ? 'cm' : 'inches'}
                             </span>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ function Bmi_calculator () {
                         />
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 text-xl font-semibold" id="weight-system">
-                                kg
+                                {selectedTopping === "Metrics" ? 'kg' : 'pounds'}
                             </span>
                         </div>
                     </div>
