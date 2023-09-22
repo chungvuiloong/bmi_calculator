@@ -1,9 +1,9 @@
-export function calculateBMI (height: number, weight: number) {    
-        return ( weight / (( height / 100) * ( height / 100 ))).toFixed(2)
+export function calculateMetricsBMI (height: number, weight: number):number {    
+        return Number(weight / (( height / 100) * ( height / 100 )))
 }
 
 export function calculateImperialBMI (height: number, weight: number) {
-    return (( weight / (height * height)) * 703 ).toFixed(2)
+    return (( weight / (height * height)) * 703 )
 }
 
 export function checkBMICategory (bmi: number) {
