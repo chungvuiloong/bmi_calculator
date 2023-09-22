@@ -2,11 +2,23 @@
 import { Card, Typography } from '@material-tailwind/react';
 import Blue_wavey_circle from '@/assets/images/logo.svg'
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
+import { calculateBMI } from 'src/helpers';
 
 function Bmi_calculator () {
     const [selected, setSelected] = useState('Metrics');
-  
+    const [inputText, setInputText] = useState({
+        height: 0,
+        weight: 0
+    });
+
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setInputText((prevInputText) => ({ ...prevInputText,
+          [name]: value
+        }));
+    };
+    
     return (
         <Card className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 shadow-xl'>
             <Typography variant='h5'>Enter your details below</Typography>
@@ -54,6 +66,7 @@ function Bmi_calculator () {
                             text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xl font-semibold"
                             placeholder="0"
                             aria-describedby="height-system"
+                            onChange={handleChange} 
                         />
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 text-xl font-semibold" id="height-system">
@@ -76,6 +89,7 @@ function Bmi_calculator () {
                             text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xl font-semibold"
                             placeholder="0"
                             aria-describedby="weight"
+                            onChange={handleChange} 
                         />
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
                             <span className="text-blue-600 text-xl font-semibold" id="weight-system">
