@@ -104,11 +104,11 @@ function Bmi_calculator () {
              md:rounded-tr-[100px] rounded-tr-[15px] 
              md:rounded-br-[100px] rounded-br-[15px]'
              >
-                { input.height && input.weight && Number(calculateBMI(input.height, input.weight)) ?  
+                { input.height && input.weight && Number(calculateBMI(input.height, input.weight, selected)) ?  
                         <div className='flex sm:flex-row flex-col gap-y-3 gap-x-7'>                                  
                             <div className='basis-1/2 flex flex-col justify-center'>
                                 <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
-                                <Typography variant='h1'>{calculateBMI(input.height, input.weight)} </Typography>
+                                <Typography variant='h1'>{calculateBMI(input.height, input.weight, selected)} </Typography>
                             </div>
                             <div className='basis-1/2 flex flex-col justify-center'>
                                 <Typography variant='small' color='white'>Your BMI suggest you {checkBMICategory(input.height, input.weight)}. Your ideal weight is between{" "} 
