@@ -7,18 +7,18 @@ import { calculateBMI } from 'src/helpers';
 
 function Bmi_calculator () {
     const [selected, setSelected] = useState('Metrics');
-    const [inputText, setInputText] = useState({
+    const [input, setInput] = useState({
         height: 0,
         weight: 0
     });
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
-        setInputText((prevInputText) => ({ ...prevInputText,
+        setInput((prevInputText) => ({ ...prevInputText,
           [name]: value
         }));
     };
-    
+
     return (
         <Card className='basis-1/2 flex flex-col bg-white rounded-2xl p-7 gap-6 shadow-xl'>
             <Typography variant='h5'>Enter your details below</Typography>
@@ -99,13 +99,20 @@ function Bmi_calculator () {
                     </div>
                 </div>
             </div>
-            <div className='p-7 bg-gradient-to-r from-blue-700 to-blue-500 text-white flex flex-col gap-5 
+            <div className='p-7 bg-gradient-to-r from-blue-700 to-blue-500 text-white 
              rounded-tl-[15px]  rounded-bl-[15px] 
              md:rounded-tr-[100px] rounded-tr-[15px] 
              md:rounded-br-[100px] rounded-br-[15px]'
              >
-                <Typography variant='h3'>Welcome!</Typography>
-                <Typography variant='paragraph' color='white'>Enter your height and weight and you will see your results here.</Typography>
+                { input.height && input.weight ? calculateBMI(input.height, input.weight) 
+                
+                :
+                    <div className='flex flex-col gap-5'>
+                        <Typography variant='h3'>Welcome!</Typography>
+                        <Typography variant='paragraph' color='white'>Enter your height and weight and you will see your results here.</Typography>
+                    </div>
+                }
+
             </div>
         </Card>
     )
