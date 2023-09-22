@@ -104,15 +104,24 @@ function Bmi_calculator () {
              md:rounded-tr-[100px] rounded-tr-[15px] 
              md:rounded-br-[100px] rounded-br-[15px]'
              >
-                { input.height && input.weight ? calculateBMI(input.height, input.weight) 
-                
-                :
-                    <div className='flex flex-col gap-5'>
-                        <Typography variant='h3'>Welcome!</Typography>
-                        <Typography variant='paragraph' color='white'>Enter your height and weight and you will see your results here.</Typography>
-                    </div>
+                { Number.isNaN(input.height) && Number.isNaN(input.weight)?  
+                        <div className='flex flex-row'>                                  
+                            <div className='basis-1/2'>
+                                <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
+                                <Typography variant='h1'>{calculateBMI(input.height, input.weight)} </Typography>
+                            </div>
+                            <div className='basis-1/2'>
+                                <Typography variant='small' color='white'>Your BMI suggest you are . Your ideal weight is between{" "} 
+                                <span className='font-semibold'>Test</span>
+                                </Typography>
+                            </div>           
+                        </div>
+                    :
+                        <div className='flex flex-col gap-5'>
+                            <Typography variant='h3'>Welcome!</Typography>
+                            <Typography variant='paragraph' color='white'>Enter your height and weight and you will see your results here.</Typography>
+                        </div>
                 }
-
             </div>
         </Card>
     )
