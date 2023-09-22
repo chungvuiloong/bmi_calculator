@@ -104,7 +104,7 @@ function Bmi_calculator () {
              md:rounded-tr-[100px] rounded-tr-[15px] 
              md:rounded-br-[100px] rounded-br-[15px]'
              >
-                { Number.isNaN(input.height) && Number.isNaN(input.weight)?  
+                { input.height && input.weight && Number(calculateBMI(input.height, input.weight)) ?  
                         <div className='flex flex-row'>                                  
                             <div className='basis-1/2'>
                                 <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
