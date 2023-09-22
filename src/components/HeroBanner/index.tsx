@@ -3,7 +3,7 @@ import { Card, Typography } from '@material-tailwind/react';
 import Blue_wavey_circle from '@/assets/images/logo.svg'
 import Image from 'next/image';
 import React, { ChangeEvent, useState } from 'react';
-import { calculateMetricsBMI, calculateImperialBMI, checkBMICategory } from 'src/helpers';
+import { calculateMetricsBMI, calculateImperialBMI, checkBMICategory, calculateBMI } from 'src/helpers';
 
 function Bmi_calculator () {
     const [selected, setSelected] = useState('Metrics');
@@ -108,12 +108,7 @@ function Bmi_calculator () {
                         <div className='flex sm:flex-row flex-col gap-y-3 gap-x-7'>                                  
                             <div className='basis-1/2 flex flex-col justify-center'>
                                 <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
-                                {
-                                    selected === "Metrics"? 
-                                        <Typography variant='h1'>{calculateMetricsBMI(input.height, input.weight).toFixed(2)} </Typography> 
-                                            : 
-                                        <Typography variant='h1'>{calculateImperialBMI(input.height, input.weight).toFixed(2)} </Typography>
-                                }
+                                <Typography variant='h1'>{calculateBMI(input.height, input.weight, selected).toFixed(2)}</Typography>
                             </div>
                             <div className='basis-1/2 flex flex-col justify-center'>
                                 <Typography variant='small' color='white'>Your BMI indicates you are{" "}
