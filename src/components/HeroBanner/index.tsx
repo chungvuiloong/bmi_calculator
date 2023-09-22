@@ -105,8 +105,8 @@ function Bmi_calculator () {
              md:rounded-br-[100px] rounded-br-[15px]'
              >
                 { input.height && input.weight && Number(calculateBMI(input.height, input.weight)) ?  
-                        <div className='flex flex-row'>                                  
-                            <div className='basis-1/2'>
+                        <div className='flex sm:flex-row flex-col gap-y-3 gap-x-7'>                                  
+                            <div className='basis-1/2 flex flex-col justify-between'>
                                 <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
                                 <Typography variant='h1'>{calculateBMI(input.height, input.weight)} </Typography>
                             </div>
