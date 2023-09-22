@@ -6,6 +6,14 @@ export function calculateImperialBMI (height: number, weight: number) {
     return (( weight / (height * height)) * 703 )
 }
 
+export function calculateBMI (height: number, weight: number, system: string) {
+    if (system === "Metrics") {
+        return Number(weight / (( height / 100) * ( height / 100 )))
+    } else {
+        return (( weight / (height * height)) * 703 )
+    } 
+}
+
 export function checkBMICategory (bmi: number) {
     if (bmi < 18.5) {
         return "underweight";
