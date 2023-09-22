@@ -110,7 +110,7 @@ function Bmi_calculator () {
                                 <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
                                 <Typography variant='h1'>{calculateBMI(input.height, input.weight)} </Typography>
                             </div>
-                            <div className='basis-1/2'>
+                            <div className='basis-1/2 flex flex-col justify-center'>
                                 <Typography variant='small' color='white'>Your BMI suggest you are . Your ideal weight is between{" "} 
                                 <span className='font-semibold'>Test</span>
                                 </Typography>
