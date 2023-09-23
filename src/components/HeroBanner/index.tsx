@@ -104,7 +104,8 @@ function Bmi_calculator () {
              md:rounded-tr-[100px] rounded-tr-[15px] 
              md:rounded-br-[100px] rounded-br-[15px]'
              >
-                { input.height && input.weight && Number(calculateMetricsBMI(input.height, input.weight)) ?  
+                {   
+                    input.height && input.weight && Number(calculateMetricsBMI(input.height, input.weight)) ?  
                         <div className='flex sm:flex-row flex-col gap-y-3 gap-x-7'>                                  
                             <div className='basis-1/2 flex flex-col justify-center'>
                                 <Typography variant='small' color='white' className='font-semibold'>Your BMI is...</Typography>
@@ -119,8 +120,9 @@ function Bmi_calculator () {
                                                     :
                                                 checkBMICategory(calculateImperialBMI(input.height, input.weight))
                                         }
-                                    </span>. Your ideal weight is between{" "} 
-                                <span className='font-semibold'>Test</span>
+                                    </span>. 
+                                    {/* Your ideal weight is between{" "} 
+                                <span className='font-semibold'>Test</span> */}
                                 </Typography>
                             </div>           
                         </div>
